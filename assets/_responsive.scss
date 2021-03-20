@@ -87,6 +87,12 @@
     }
 }
 
+@media only screen and (max-width: 468px) {
+    #bioclock-title {
+        text-align: left;
+    }
+}
+
 // #banner-nav-wrapper and #greefies-list breakpoint
 @media only screen and (max-width: 370px) {
     .banner-nav-wrapper {
