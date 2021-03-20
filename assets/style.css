@@ -90,6 +90,10 @@ body {
   }
 }
 @media only screen and (max-width: 370px) {
+  .banner-nav-wrapper {
+    width: 90vw !important;
+  }
+
   #greefies-list a {
     font-size: 1rem !important;
   }
@@ -200,7 +204,7 @@ header nav a:hover img {
   height: 45px;
   background-image: url(../assets/images/right_nav.gif);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   background-position: center;
   display: flex;
   align-items: center;

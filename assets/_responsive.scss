@@ -89,7 +89,9 @@
 
 // #banner-nav-wrapper and #greefies-list breakpoint
 @media only screen and (max-width: 370px) {
-// je ne parviens pas à modifier les dimensions de banner-nav-wrapper
+    .banner-nav-wrapper {
+        width: 90vw !important;
+    }
     #greefies-list {
         & a {
             font-size: 1rem !important;
