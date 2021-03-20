@@ -87,6 +87,7 @@
     }
 }
 
+// #bioclock-title breakpoint
 @media only screen and (max-width: 468px) {
     #bioclock-title {
         text-align: left;
@@ -109,13 +110,6 @@
         & a {
             font-size: .9rem !important;
         }
-    }
-}
-
-// #bioclock-title breakpoint
-@media only screen and (max-width: 357px) {
-    #bioclock-title {
-        text-align: left;
     }
 }
 
