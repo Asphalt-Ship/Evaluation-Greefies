@@ -1,30 +1,37 @@
 @import "base";
+@import "responsive";
 
-nav {
-    height: 40px;
+header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #416271;
-    & a {
-        text-decoration: none;
-        color: white;
-        padding: 1.5rem;
-        & img {
-            display: none;
-        }
-        &:hover {
-            transform: translateY(-2px);
+    flex-direction: column;
+    & #header-logo {
+        margin: 10px 0;
+    }
+    & nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #416271;
+        & a {
+            text-decoration: none;
+            color: white;
+            padding: 1rem;
             & img {
-                display: inline;
-                margin-right: 5px;
+                display: none;
+                height: 15px;
+            }
+            &:hover {
+                transform: translateY(-2px);
+                & img {
+                    display: inline;
+                    margin-right: 5px;
+                }
             }
         }
     }
 }
 
 #banner {
-    height: 325px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -34,15 +41,13 @@ nav {
     background-repeat: no-repeat;
     color: white;
     margin-bottom: 15px;
-    & #clock-image {
-        margin-top: 20px;
-    }
+    padding: 30px 15px 45px 15px;
     & #bioclock-wrapper {
-        width: 45%;
+        width: 45vw;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        margin-top: 30px;
+        margin: 0 30px 30px 30px;
         & #bioclock-title {
             width: 100%;
             font-size: 1.75rem;
@@ -68,11 +73,10 @@ nav {
         }
     }
     & #banner-nav {
-        width: 30%;
+        width: 30vw;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 30px;
         & .banner-nav-wrapper {
             text-decoration: none;
             font-size: 0.95rem;
@@ -143,17 +147,19 @@ nav {
             & #plant-img {
                 height: 124px;
                 border: 1px solid #CAE6C6;
+                float: left;
                 margin-right: 15px;
             }
             & #plant-txt {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
                 font-size: 0.9rem;
                 line-height: 1.3;
                 color: #416271;
-                & a {
-                    margin-top: 5px;
+                & .read-more-wrapper {
+                    display: flex;
+                    justify-content: flex-end;
+                    & a {
+                        margin-top: 5px;
+                    }
                 }
             }
         }
@@ -179,9 +185,6 @@ nav {
                 margin-right: 25px;
             }
             & .product-txt {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
                 & h3 {
                     width: 100%;
                 }
@@ -190,8 +193,12 @@ nav {
                     margin: 10px 0;
                     line-height: 1.3;
                 }
-                & a {
-                    margin-bottom: 15px;
+                & .read-more-wrapper {
+                    display: flex;
+                    justify-content: flex-end;
+                    & a {
+                        margin-bottom: 15px;
+                    }
                 }
             }
         }
@@ -265,18 +272,17 @@ nav {
 }
 
 footer {
-    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #416271;
+    padding: 10px;
     & #footer-logo {
-        margin-left: 10px;
+        margin: 0 15px 0 10px;
         display: flex;
         align-items: center;
     }
     & #about-us {
-        margin-right: 10px;
         & a {
             text-decoration: none;
             color: white;

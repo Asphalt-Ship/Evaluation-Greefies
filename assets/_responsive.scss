@@ -1,0 +1,125 @@
+// #banner breakpoint
+@media only screen and (max-width: 1106px) {
+    #banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & #bioclock-wrapper {
+            width: 80vw !important;
+        }
+    }
+}
+
+// #contact breakpoint
+@media only screen and (max-width: 950px) {
+    #contact {
+        display: flex;
+        flex-direction: column;
+        & #contact-form {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// #article-wrapper breakpoint
+@media only screen and (max-width: 841px) {
+    #article-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & #welcome-wrapper {
+            width: 80% !important;
+            margin-bottom: 20px;
+        }
+    }
+    #products-wrapper {
+        width: 80% !important;
+    }
+    #contact {
+        flex-direction: row;
+    }
+}
+
+// #contact second breakpoint
+@media only screen and (max-width: 681px) {
+    #contact {
+        flex-direction: column;
+    }
+}
+
+// <nav> breakpoint
+@media only screen and (max-width: 589px) {
+    header {
+        & nav {
+            display: flex;
+            flex-direction: column;
+            flex-flow: wrap column;
+            padding: 10px 0;
+            & img {
+                height: 15px;
+            }
+        }
+    }
+}
+
+// #about-us breakpoint
+@media only screen and (max-width: 535px) {
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        & #about-us {
+            margin-bottom: 15px
+        }
+        & #footer-logo {
+            align-self: flex-start;
+        }
+    }
+}
+@media only screen and (max-width: 381px) {
+    #about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px !important;
+        & a {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+// #banner-nav-wrapper and #greefies-list breakpoint
+@media only screen and (max-width: 370px) {
+// je ne parviens pas à modifier les dimensions de banner-nav-wrapper
+    #greefies-list {
+        & a {
+            font-size: 1rem !important;
+        }
+    }
+}
+@media only screen and (max-width: 343px) {
+    #greefies-list {
+        & a {
+            font-size: .9rem !important;
+        }
+    }
+}
+
+// #bioclock-title breakpoint
+@media only screen and (max-width: 357px) {
+    #bioclock-title {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .blueh3 {
+        text-align: left;
+    }
+}
+
+// "welcome to greefies" h2 breakpoint
+@media only screen and (max-width: 329px) {
+    #welcomeh2 {
+        text-align: left;
+    }
+}
